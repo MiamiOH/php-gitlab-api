@@ -32,6 +32,29 @@ use Gitlab\Client;
  * @property-read string $avatar_url
  * @property-read User $owner
  * @property-read ProjectNamespace $namespace
+ * @property-read bool $archived
+ * @property-read string $ci_config_path
+ * @property-read bool $container_registry_enabled
+ * @property-read int $creator_id
+ * @property-read int $forks_count
+ * @property-read string $import_status
+ * @property-read bool $jobs_enabled
+ * @property-read bool $lfs_enabled
+ * @property-read string $merge_method
+ * @property-read bool $only_allow_merge_if_all_discussions_are_resolved
+ * @property-read bool $only_allow_merge_if_pipeline_succeeds
+ * @property-read int $open_issues_count
+ * @property-read $permissions
+ * @property-read bool $printing_merge_request_link_enabled
+ * @property-read true $public_jobs
+ * @property-read string $readme_url
+ * @property-read bool $request_access_enabled
+ * @property-read bool $resolve_outdated_diff_discussions
+ * @property-read bool $shared_runners_enabled
+ * @property-read bool $shared_with_groups
+ * @property-read int $star_count
+ * @property-read string $visibility
+
  */
 class Project extends AbstractModel
 {
@@ -63,7 +86,29 @@ class Project extends AbstractModel
         'last_activity_at',
         'snippets_enabled',
         'tag_list',
-        'avatar_url'
+        'avatar_url',
+        'archived',
+        'ci_config_path',
+        'container_registry_enabled',
+        'creator_id',
+        'forks_count',
+        'import_status',
+        'jobs_enabled',
+        'lfs_enabled',
+        'merge_method',
+        'only_allow_merge_if_all_discussions_are_resolved',
+        'only_allow_merge_if_pipeline_succeeds',
+        'open_issues_count',
+        'permissions',
+        'printing_merge_request_link_enabled',
+        'public_jobs',
+        'readme_url',
+        'request_access_enabled',
+        'resolve_outdated_diff_discussions',
+        'shared_runners_enabled',
+        'shared_with_groups',
+        'star_count',
+        'visibility',
     );
 
     /**
